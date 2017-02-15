@@ -1,0 +1,11 @@
+.menu_list_header_active{
+color: #90EE90;
+}
+
+
+.menu_list_header li{
+   padding:20px 55px;
+   font-size: 30px;
+   color:#777777;
+   font-weight: bold;
+}
