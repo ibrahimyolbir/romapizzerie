@@ -1,5 +1,7 @@
 $(document).ready(function(){
   $('.bxslider').bxSlider();
+  $(".roma-pizza-menu").niceScroll();
+
 });
 
 //Menu Slider
