@@ -1,7 +1,11 @@
-.menu_list_header li{
-   padding:40px 85px;
+.menu_list_header_content div{
    font-size: 30px;
    font-weight: bold;
+}
+
+
+.menu_list_header_content{
+  margin: 20px;
 }
 
 .menu_list_header_a {
