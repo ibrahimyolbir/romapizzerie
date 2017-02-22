@@ -2,9 +2,19 @@ $(document).ready(function(){
   $('.bxslider').bxSlider();
 });
 
-function changeSlide(){
+//Menu Slider
+$( ".menu_list_header_a" ).click(function() {
+  var indexNo = $(this).attr("list-index");
+  var links = $( ".bx-pager-link");
+  for(var i=0; i<links.length; i++){
+    if(links[i].getAttribute("data-slide-index") == indexNo){
+        links[i].click();
+      }
+  }
+  $(".menu_list_header_a").removeClass("menu_list_header_active_a");
+  $(this).addClass( "menu_list_header_active_a" );
+});
 
-}
 //Gallery Metod
 $(function(){
 		var $gallery = $('.gallery a').simpleLightbox();
