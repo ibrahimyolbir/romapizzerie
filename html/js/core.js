@@ -62,3 +62,20 @@ $(function(){
 			console.log(e);
 		});
 	});
+
+  $('#example').pieChart();
+
+
+// jquery easing function
+easing: function (x, t, b, c, d) {
+  t = t / (d / 2);
+  if (t < 1) {
+    return c / 2 * t * t + b;
+  }
+  return -c / 2 * ((--t) * (t - 2) - 1) + b;
+},
+
+// show the percent digital animate
+onStep: function (from, to, currentValue) {
+  return;
+},
